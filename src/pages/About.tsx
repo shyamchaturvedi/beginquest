@@ -4,11 +4,16 @@ import '../index.css';
 
 // ... imports
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import ownerBannerImg from '../assets/owner_banner.jpg';
 
 const About: React.FC = () => {
     return (
         <div className="about-page" style={{ paddingBottom: '4rem' }}>
+            <Helmet>
+                <title>About Us | Beginquest Services - Leading Business Consultancy in Lucknow</title>
+                <meta name="description" content="Learn about Beginquest Services Pvt. Ltd., a Lucknow-based consultancy led by L.S. Tripathi, dedicated to simplifying business compliance and financial growth." />
+            </Helmet>
             <div className="bg-primary text-white" style={{ backgroundColor: 'var(--color-primary)', color: 'white', padding: '6rem 0', textAlign: 'center' }}>
                 <motion.h1
                     initial={{ opacity: 0, y: -20 }}

@@ -1,11 +1,16 @@
 
 import React from 'react';
 import { FileText, Briefcase, DollarSign, Shield } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import '../styles/Services.css';
 
 const Services: React.FC = () => {
     return (
         <div className="services-page">
+            <Helmet>
+                <title>Our Services | Beginquest Services - GST, Registration, Loans</title>
+                <meta name="description" content="Explore our wide range of services including Company Incorporation, GST Filing, Income Tax, MSME Registration, FSSAI Licensing, and Business Loans." />
+            </Helmet>
             <div className="services-hero">
                 <div className="container">
                     <h1>Our Complete Business Consulting Services</h1>

@@ -2,11 +2,16 @@
 import { Link } from 'react-router-dom';
 import { ShieldCheck, TrendingUp, FileText, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import '../styles/Home.css';
 
 const Home: React.FC = () => {
     return (
         <>
+            <Helmet>
+                <title>Beginquest Services | Business Registration, GST, & Compliance Experts</title>
+                <meta name="description" content="Beginquest Services is a trusted consultancy in Lucknow offering Business Registration (Pvt Ltd, LLP), GST, MSME, FSSAI, and Financial Loan services." />
+            </Helmet>
             {/* Hero Section */}
             <section className="hero-section">
                 <div className="container hero-content">

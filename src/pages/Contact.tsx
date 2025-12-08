@@ -2,6 +2,7 @@
 import type { FormEvent } from 'react';
 import { useState } from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const Contact: React.FC = () => {
     const [formData, setFormData] = useState({
@@ -38,6 +39,10 @@ const Contact: React.FC = () => {
 
     return (
         <div className="contact-page">
+            <Helmet>
+                <title>Contact Us | Beginquest Services - Get In Touch</title>
+                <meta name="description" content="Contact Beginquest Services for expert business consultancy. Call +91 9616125261 or visit our office in Gomti Nagar, Lucknow." />
+            </Helmet>
             <div style={{ backgroundColor: '#001F3F', color: 'white', padding: '3rem 0', textAlign: 'center' }}>
                 <h1>Contact Us</h1>
                 <p>We are here to help you.</p>
